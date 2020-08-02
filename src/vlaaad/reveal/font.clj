@@ -29,7 +29,7 @@
 (def ^javafx.scene.text.Font font
   (javafx.scene.text.Font/loadFont
     (io/input-stream
-      (io/resource "vlaaad/reveal/FantasqueSansMono-Regular.ttf")) 14.5))
+      (io/resource "vlaaad/reveal/FantasqueSansMono-Regular.ttf")) 48.0))
 
 (let [metrics (.getFontMetrics (.getFontLoader (Toolkit/getToolkit)) font)]
   (def ^double ^:const line-height (Math/ceil (.getLineHeight metrics)))
